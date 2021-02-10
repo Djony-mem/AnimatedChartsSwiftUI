@@ -18,9 +18,9 @@ class PieceOfPieContainer: ObservableObject {
     func calcOfPath() {
         var value: CGFloat = 0
         
-        for piece in 0..<chartData.count {
-            value += chartData[piece].percent
-            chartData[piece].value = value
+        for index in 0..<chartData.count {
+            value += chartData[index].percent
+            chartData[index].value = value
         }
     }
 }

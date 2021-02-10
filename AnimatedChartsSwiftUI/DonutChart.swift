@@ -1,20 +1,21 @@
 //
-//  PieChart.swift
+//  DonutChart.swift
 //  AnimatedChartsSwiftUI
 //
-//  Created by Brubrusha on 2/9/21.
+//  Created by Brubrusha on 2/11/21.
 //
 
 import SwiftUI
 
-struct PieChart: View {
+struct DonutChart: View {
     @ObservedObject var charDataObj = PieceOfPieContainer()
     @State private var indexOfTappedSlice = -1
     
     var body: some View {
         VStack {
-            chartCircleView
-                .frame(width: 100, height: 200)
+            chartDonutView
+                .frame(width: 200, height: 250)
+                .padding()
                 .onAppear() {
                     self.charDataObj.calcOfPath()
                 }
@@ -26,16 +27,21 @@ struct PieChart: View {
 }
 
 // MARK: - Private Properties
-extension PieChart {
-    private var chartCircleView: some View {
+extension DonutChart {
+    private var chartDonutView: some View {
         ZStack {
             ForEach(0..<charDataObj.chartData.count) { index in
                 Circle()
                     .trim(from: index == 0 ? 0.0 : charDataObj.chartData[index - 1].value / 100,
                           to: charDataObj.chartData[index].value/100)
-                    .stroke(charDataObj.chartData[index].color, lineWidth: 100)
+                    .stroke(charDataObj.chartData[index].color, lineWidth: 50)
                     .scaleEffect(index == indexOfTappedSlice ? 1.1 : 1.0)
                     .animation(.spring())
+            }
+            if indexOfTappedSlice != -1 {
+                Text(String(format: "%.2f",
+                            Double(charDataObj.chartData[indexOfTappedSlice].percent)) + "%")
+                    .font(.title)
             }
         }
     }
@@ -58,8 +64,8 @@ extension PieChart {
     }
 }
 
-struct PieChart_Previews: PreviewProvider {
+struct DonutChart_Previews: PreviewProvider {
     static var previews: some View {
-        PieChart()
+        DonutChart()
     }
 }
