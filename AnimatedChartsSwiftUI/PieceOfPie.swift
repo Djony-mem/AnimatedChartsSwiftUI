@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct PieceOfPie {
-//    let id = UUID()
+    let id = UUID()
     let color: Color
     let percent: CGFloat
     var value: CGFloat

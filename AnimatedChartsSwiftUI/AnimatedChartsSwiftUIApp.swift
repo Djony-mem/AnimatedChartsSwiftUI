@@ -11,7 +11,7 @@ import SwiftUI
 struct AnimatedChartsSwiftUIApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            PieChart()
         }
     }
 }

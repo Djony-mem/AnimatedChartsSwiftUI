@@ -8,24 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		763D92B325D2C04F004617E4 /* AnimatedChartsSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763D92B225D2C04F004617E4 /* AnimatedChartsSwiftUIApp.swift */; };
-		763D92B525D2C04F004617E4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763D92B425D2C04F004617E4 /* ContentView.swift */; };
 		763D92B725D2C052004617E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 763D92B625D2C052004617E4 /* Assets.xcassets */; };
 		763D92BA25D2C052004617E4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 763D92B925D2C052004617E4 /* Preview Assets.xcassets */; };
 		763D92C725D2C18B004617E4 /* PieceOfPie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763D92C625D2C18B004617E4 /* PieceOfPie.swift */; };
 		763D92CA25D2C2FC004617E4 /* PieceOfPieContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763D92C925D2C2FC004617E4 /* PieceOfPieContainer.swift */; };
 		763D92CD25D2CBC4004617E4 /* PieChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763D92CC25D2CBC4004617E4 /* PieChart.swift */; };
+		763D92D925D48D7B004617E4 /* DonutChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763D92D825D48D7B004617E4 /* DonutChart.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		763D92AF25D2C04F004617E4 /* AnimatedChartsSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimatedChartsSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		763D92B225D2C04F004617E4 /* AnimatedChartsSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedChartsSwiftUIApp.swift; sourceTree = "<group>"; };
-		763D92B425D2C04F004617E4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		763D92B625D2C052004617E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		763D92B925D2C052004617E4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		763D92BB25D2C052004617E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		763D92C625D2C18B004617E4 /* PieceOfPie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieceOfPie.swift; sourceTree = "<group>"; };
 		763D92C925D2C2FC004617E4 /* PieceOfPieContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieceOfPieContainer.swift; sourceTree = "<group>"; };
 		763D92CC25D2CBC4004617E4 /* PieChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChart.swift; sourceTree = "<group>"; };
+		763D92D825D48D7B004617E4 /* DonutChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonutChart.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +59,10 @@
 			isa = PBXGroup;
 			children = (
 				763D92B225D2C04F004617E4 /* AnimatedChartsSwiftUIApp.swift */,
-				763D92B425D2C04F004617E4 /* ContentView.swift */,
 				763D92C625D2C18B004617E4 /* PieceOfPie.swift */,
 				763D92C925D2C2FC004617E4 /* PieceOfPieContainer.swift */,
 				763D92CC25D2CBC4004617E4 /* PieChart.swift */,
+				763D92D825D48D7B004617E4 /* DonutChart.swift */,
 				763D92B625D2C052004617E4 /* Assets.xcassets */,
 				763D92BB25D2C052004617E4 /* Info.plist */,
 				763D92B825D2C052004617E4 /* Preview Content */,
@@ -147,7 +147,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				763D92B525D2C04F004617E4 /* ContentView.swift in Sources */,
+				763D92D925D48D7B004617E4 /* DonutChart.swift in Sources */,
 				763D92C725D2C18B004617E4 /* PieceOfPie.swift in Sources */,
 				763D92CA25D2C2FC004617E4 /* PieceOfPieContainer.swift in Sources */,
 				763D92B325D2C04F004617E4 /* AnimatedChartsSwiftUIApp.swift in Sources */,
