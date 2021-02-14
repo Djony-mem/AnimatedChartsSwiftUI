@@ -11,7 +11,8 @@ import SwiftUI
 struct AnimatedChartsSwiftUIApp: App {
     var body: some Scene {
         WindowGroup {
-            PieChart()
+            DonutChart()
         }
     }
 }
+
